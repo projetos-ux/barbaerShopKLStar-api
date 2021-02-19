@@ -1,0 +1,5 @@
+package com.barberShopKLStar.BarberShopKLStar.entity;
+
+public @interface Id {
+
+}
