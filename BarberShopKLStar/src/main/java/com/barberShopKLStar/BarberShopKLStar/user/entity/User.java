@@ -52,9 +52,15 @@ public class User implements Serializable {
 	private String fullname;
 	private String telefone;
 	
-	//public static User to(RegisterUserDTO dto) {
-		//return User;
-		
-	//}
+	public static User to(RegisterUserDTO dto) {
+		return User.builder()
+				.login(dto.getLogin())
+				.password(dto.getPassword())
+				.fullname(dto.getFullName())
+				.email(dto.getEmail())
+				.telefone(dto.getTelefone())
+				
+				.build();
+	}
 
 }
